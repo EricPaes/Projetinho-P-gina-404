@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>404 – Página não encontrada</title>
+  <meta name="description" content="Ops! A página que você procura não existe. Nosso monstro fofo está tão triste quanto você." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar" id="navbar">
+    <div class="navbar__inner">
+      <a href="/" class="navbar__logo" id="logo-link">Logo</a>
+
+      <nav class="navbar__nav" id="main-nav" aria-label="Navegação principal">
+        <a href="/" class="nav-link" id="nav-inicio">Início</a>
+        <a href="/sobre" class="nav-link" id="nav-sobre">Sobre nós</a>
+        <a href="/blog" class="nav-link" id="nav-blog">Blog</a>
+        <a href="/contato" class="nav-link" id="nav-contato">Contato</a>
+      </nav>
+
+      <a href="/membros" class="btn-members" id="btn-members">Área de membros</a>
+
+      <!-- Hamburger (mobile) -->
+      <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+      <a href="/" class="nav-link">Início</a>
+      <a href="/sobre" class="nav-link">Sobre nós</a>
+      <a href="/blog" class="nav-link">Blog</a>
+      <a href="/contato" class="nav-link">Contato</a>
+      <a href="/membros" class="btn-members">Área de membros</a>
+    </div>
+  </header>
+
+  <!-- ===== HERO 404 ===== -->
+  <main class="hero" id="hero">
+
+    <!-- Vídeo de fundo com fundo claro do monstrinho -->
+    <div class="hero__bg-video" aria-hidden="true">
+      <video
+        id="monster-video"
+        src="Monster_looking_side_202603291025.mp4"
+        autoplay
+        loop
+        muted
+        playsinline
+        preload="auto"
+      ></video>
+    </div>
+
+    <!-- Layout 404 -->
+    <div class="hero__content" aria-label="Erro 404">
+
+      <!-- Número 4 esquerdo -->
+      <div class="four four--left" aria-hidden="true">4</div>
+
+      <!-- Zero = Monstro (apenas espaço reservado – o vídeo aparece pelo clip-path) -->
+      <div class="zero-placeholder" aria-hidden="true"></div>
+
+      <!-- Número 4 direito -->
+      <div class="four four--right" aria-hidden="true">4</div>
+
+    </div>
+
+    <!-- Estrela decorativa (canto inferior direito) -->
+    <div class="deco-star" aria-hidden="true">✦</div>
+
+  </main>
+
+  <!-- ===== SECTION ABAIXO ===== -->
+  <section class="below-section" id="info-section">
+    <div class="below-section__inner">
+      <h1 class="below-section__title">Ops! Página não encontrada.</h1>
+      <p class="below-section__text">
+        Parece que nossa pequena criatura deu uma volta por aqui e não encontrou o que você estava procurando.<br />
+        Mas não se preocupe — ela está tão triste quanto você!
+      </p>
+      <a href="/" class="btn-home" id="btn-home">Voltar para o início</a>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
